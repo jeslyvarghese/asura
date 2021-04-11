@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D84AA0972621A172000773C4 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84AA0962621A171000773C4 /* Array.swift */; };
+		D84AA09B2621A9C7000773C4 /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84AA09A2621A9C7000773C4 /* Integer.swift */; };
+		D8532260261BB06000DA6DAF /* ParseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853225E261BB06000DA6DAF /* ParseHeader.swift */; };
+		D8532261261BB06000DA6DAF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853225F261BB06000DA6DAF /* main.swift */; };
+		D8532265261BB09100DA6DAF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8532264261BB09100DA6DAF /* Data.swift */; };
+		D853226F261BB9B800DA6DAF /* AsuraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853226E261BB9B800DA6DAF /* AsuraTests.swift */; };
+		D8532278261BBA0300DA6DAF /* ParseHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8532277261BBA0300DA6DAF /* ParseHeaderTests.swift */; };
+		D853227D261BBB0900DA6DAF /* ParseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853225E261BB06000DA6DAF /* ParseHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D853224D261BAFE700DA6DAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D84AA0962621A171000773C4 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		D84AA09A2621A9C7000773C4 /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		D853224F261BAFE700DA6DAF /* Asura */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Asura; sourceTree = BUILT_PRODUCTS_DIR; };
+		D853225C261BB06000DA6DAF /* Asura-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asura-Bridging-Header.h"; sourceTree = "<group>"; };
+		D853225E261BB06000DA6DAF /* ParseHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHeader.swift; sourceTree = "<group>"; };
+		D853225F261BB06000DA6DAF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D8532264261BB09100DA6DAF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D853226C261BB9B800DA6DAF /* AsuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsuraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D853226E261BB9B800DA6DAF /* AsuraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsuraTests.swift; sourceTree = "<group>"; };
+		D8532270261BB9B800DA6DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8532277261BBA0300DA6DAF /* ParseHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHeaderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D853224C261BAFE700DA6DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8532269261BB9B800DA6DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8532246261BAFE700DA6DAF = {
+			isa = PBXGroup;
+			children = (
+				D853225D261BB06000DA6DAF /* lib */,
+				D853225F261BB06000DA6DAF /* main.swift */,
+				D853226D261BB9B800DA6DAF /* AsuraTests */,
+				D8532250261BAFE700DA6DAF /* Products */,
+				D853225C261BB06000DA6DAF /* Asura-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		D8532250261BAFE700DA6DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D853224F261BAFE700DA6DAF /* Asura */,
+				D853226C261BB9B800DA6DAF /* AsuraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D853225D261BB06000DA6DAF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D8532263261BB07A00DA6DAF /* extensions */,
+				D853225E261BB06000DA6DAF /* ParseHeader.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D8532263261BB07A00DA6DAF /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8532264261BB09100DA6DAF /* Data.swift */,
+				D84AA0962621A171000773C4 /* Array.swift */,
+				D84AA09A2621A9C7000773C4 /* Integer.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		D853226D261BB9B800DA6DAF /* AsuraTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8532276261BB9E700DA6DAF /* lib */,
+				D853226E261BB9B800DA6DAF /* AsuraTests.swift */,
+				D8532270261BB9B800DA6DAF /* Info.plist */,
+			);
+			path = AsuraTests;
+			sourceTree = "<group>";
+		};
+		D8532276261BB9E700DA6DAF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D8532277261BBA0300DA6DAF /* ParseHeaderTests.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D853224E261BAFE700DA6DAF /* Asura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8532256261BAFE700DA6DAF /* Build configuration list for PBXNativeTarget "Asura" */;
+			buildPhases = (
+				D853224B261BAFE700DA6DAF /* Sources */,
+				D853224C261BAFE700DA6DAF /* Frameworks */,
+				D853224D261BAFE700DA6DAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Asura;
+			productName = Asura;
+			productReference = D853224F261BAFE700DA6DAF /* Asura */;
+			productType = "com.apple.product-type.tool";
+		};
+		D853226B261BB9B800DA6DAF /* AsuraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8532271261BB9B800DA6DAF /* Build configuration list for PBXNativeTarget "AsuraTests" */;
+			buildPhases = (
+				D8532268261BB9B800DA6DAF /* Sources */,
+				D8532269261BB9B800DA6DAF /* Frameworks */,
+				D853226A261BB9B800DA6DAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsuraTests;
+			productName = AsuraTests;
+			productReference = D853226C261BB9B800DA6DAF /* AsuraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8532247261BAFE700DA6DAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D853224E261BAFE700DA6DAF = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					D853226B261BB9B800DA6DAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = D853224A261BAFE700DA6DAF /* Build configuration list for PBXProject "Asura" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8532246261BAFE700DA6DAF;
+			productRefGroup = D8532250261BAFE700DA6DAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D853224E261BAFE700DA6DAF /* Asura */,
+				D853226B261BB9B800DA6DAF /* AsuraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D853226A261BB9B800DA6DAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D853224B261BAFE700DA6DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8532261261BB06000DA6DAF /* main.swift in Sources */,
+				D84AA0972621A172000773C4 /* Array.swift in Sources */,
+				D8532265261BB09100DA6DAF /* Data.swift in Sources */,
+				D8532260261BB06000DA6DAF /* ParseHeader.swift in Sources */,
+				D84AA09B2621A9C7000773C4 /* Integer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8532268261BB9B800DA6DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8532278261BBA0300DA6DAF /* ParseHeaderTests.swift in Sources */,
+				D853226F261BB9B800DA6DAF /* AsuraTests.swift in Sources */,
+				D853227D261BBB0900DA6DAF /* ParseHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8532254261BAFE700DA6DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8532255261BAFE700DA6DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D8532257261BAFE700DA6DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z86Q4YF2FL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Asura-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D8532258261BAFE700DA6DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z86Q4YF2FL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Asura-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D8532272261BB9B800DA6DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z86Q4YF2FL;
+				INFOPLIST_FILE = AsuraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadratic.xyz.AsuraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D8532273261BB9B800DA6DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z86Q4YF2FL;
+				INFOPLIST_FILE = AsuraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadratic.xyz.AsuraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D853224A261BAFE700DA6DAF /* Build configuration list for PBXProject "Asura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8532254261BAFE700DA6DAF /* Debug */,
+				D8532255261BAFE700DA6DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8532256261BAFE700DA6DAF /* Build configuration list for PBXNativeTarget "Asura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8532257261BAFE700DA6DAF /* Debug */,
+				D8532258261BAFE700DA6DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8532271261BB9B800DA6DAF /* Build configuration list for PBXNativeTarget "AsuraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8532272261BB9B800DA6DAF /* Debug */,
+				D8532273261BB9B800DA6DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8532247261BAFE700DA6DAF /* Project object */;
+}
