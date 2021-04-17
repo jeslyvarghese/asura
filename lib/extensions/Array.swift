@@ -7,10 +7,10 @@ extension Array where Element: FixedWidthInteger {
         return [Element](self[from...to])
     }
     
-    @usableFromInline func flatten<S>(isReversed: Bool = false) -> S where S: FixedWidthInteger {
+    @inlinable func flatten<S>(isReversed: Bool = false) -> S where S: FixedWidthInteger {
         guard !isReversed else {
-            return self.reversed().reduce(S(0)) { ($0 << (MemoryLayout<Element>.size * 8)) | S($1) }
+            return self.reversed().reduce(S(0)) { ($0 << Element.bitWidth) | S($1) }
         }
-        return self.reduce(S(0)) { ($0 << (MemoryLayout<Element>.size * 8)) | S($1) }
+        return self.reduce(S(0)) { ($0 << Element.bitWidth) | S($1) }
     }
 }

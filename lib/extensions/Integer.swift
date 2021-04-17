@@ -9,4 +9,8 @@ extension FixedWidthInteger {
         let padLength = self.bitWidth / 4
         return   "0x" + (value.count < padLength ? String(repeating: "0", count: padLength - value.count) + value : value)
     }
+    
+    @inlinable func explode<S>() -> [S] where S: FixedWidthInteger {
+        return (0...self.bitWidth/S.bitWidth-1).map { S((self ^  (1 << ($0 * S.bitWidth) )) >> ($0 * S.bitWidth) ) }
+    }
 }

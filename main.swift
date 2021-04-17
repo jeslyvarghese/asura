@@ -8,4 +8,11 @@ let testFilePath = "/Volumes/Addon/Library/DerivedData/Asura-bxbtfcsstvezvmhgqlv
 let data = try! Data(contentsOf: URL(fileURLWithPath: testFilePath))
 let byteArray = data.bytes
 let header = make(MachOHeaderFromBytes: byteArray)
+let commandsList = make(loadCommandsFromBytes: byteArray,
+                        numberOfCommands: Int(header.numberOfCommands),
+                        commandSize: Int(header.sizeOfLoadCommands),
+                        offset: ._64,
+                        isReveresed: true)
 header.prettyPrint()
+print(commandsList)
+print(commandsList.count)
